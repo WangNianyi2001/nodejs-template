@@ -1,0 +1,14 @@
+{
+	"type": "module",
+	"files": ["./build/**/*"],
+	"scripts": {
+		"clean": "rm -rf ./build",
+		"prebuild": "npm run clean",
+		"build": "npx tsc",
+		"pretest": "npx tsc --project ./test/tsconfig.json",
+		"test": "node ./test/index.mjs"
+	},
+	"devDependencies": {
+		"typescript": "^4.9.4"
+	}
+}

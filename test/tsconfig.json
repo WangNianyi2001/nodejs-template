@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		// Environment
+		"target": "ESNext",
+		"lib": ["ESNext", "DOM"],
+		"module": "ESNext",
+		// Grammar
+		"alwaysStrict": true
+	}
+}
