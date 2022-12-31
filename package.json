@@ -1,7 +1,9 @@
 {
 	"name": "@nianyi-wang/vector",
+	"version": "0.0.1",
 	"author": "Nianyi Wang<wangnianyi2001@outlook.com>",
 	"type": "module",
+	"main": "./build/index.mjs",
 	"files": ["./build/**/*"],
 	"scripts": {
 		"clean": "rm -rf ./build",
