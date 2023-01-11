@@ -18,15 +18,15 @@ export class RealNumber {
         return this.#value;
     }
     Plus(number) {
-        return new RealNumber(this.#value + number.#value);
+        return new RealNumber(this.#value + number.valueOf());
     }
     Minus(number) {
-        return new RealNumber(this.#value - number.#value);
+        return new RealNumber(this.#value - number.valueOf());
     }
     Multiply(number) {
-        return new RealNumber(this.#value * number.#value);
+        return new RealNumber(this.#value * number.valueOf());
     }
     Divide(number) {
-        return new RealNumber(this.#value / number.#value);
+        return new RealNumber(this.#value / number.valueOf());
     }
 }

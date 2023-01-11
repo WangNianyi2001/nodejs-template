@@ -39,15 +39,15 @@ export class RealNumber implements Number<RealNumber> {
 	}
 
 	Plus(number: RealNumber): RealNumber {
-		return new RealNumber(this.#value + number.#value);
+		return new RealNumber(this.#value + number.valueOf());
 	}
 	Minus(number: RealNumber): RealNumber {
-		return new RealNumber(this.#value - number.#value);
+		return new RealNumber(this.#value - number.valueOf());
 	}
 	Multiply(number: RealNumber): RealNumber {
-		return new RealNumber(this.#value * number.#value);
+		return new RealNumber(this.#value * number.valueOf());
 	}
 	Divide(number: RealNumber): RealNumber {
-		return new RealNumber(this.#value / number.#value);
+		return new RealNumber(this.#value / number.valueOf());
 	}
 }
